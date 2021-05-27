@@ -1,0 +1,29 @@
+{
+  "name": "aws-ses",
+  "version": "1.0.0",
+  "description": "Minimalist request generator for SES (AWS Simple Email Service).",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saibotsivad/aws-ses.git"
+  },
+  "keywords": [
+    "aws",
+    "ses",
+    "email"
+  ],
+  "author": "saibotsivad",
+  "license": "VOL",
+  "bugs": {
+    "url": "https://github.com/saibotsivad/aws-ses/issues"
+  },
+  "homepage": "https://github.com/saibotsivad/aws-ses#readme",
+  "dependencies": {
+    "form-urlencoded": "^6.0.4",
+    "sign-aws-requests": "^1.0.1"
+  },
+  "devDependencies": {
+    "httpie": "^1.1.2"
+  }
+}
