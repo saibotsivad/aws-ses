@@ -1,6 +1,6 @@
 # @saibotsivad/aws-ses
 
-Minimalist request generator for SES (AWS Simple Email Service). 
+Minimalist request generator for SES (AWS Simple Email Service).
 
 Generates the url, headers, and body for a POST request to the AWS SES API, using the v4 signing algorithm.
 
@@ -91,11 +91,11 @@ Returns an object with the following possible properties:
 - `errorCode: String` The error code, if present, e.g. `MessageRejected`.
 - `errorMessage: String` The full error message, if present.
 
-## `awsSes: function ( Object<{ configuration: Object }> ) => generateRequest: function`
+## `awsSes: function ( Object<{ credentials: Object, url?: String }> ) => generateRequest: function`
 
-Instantiates a request generator. Pass in an object with the property `configuration` containing the AWS configuration and credentials.
+Instantiates a request generator. Pass in an object with the property `credentials` containing the AWS configuration and credentials.
 
-The `configuration` object takes the following properties:
+The `credentials` object takes the following properties:
 
 - `region: String` *(required)* The AWS region, e.g. `us-east-1`.
 - `accessKeyId` *(required)* The identifier of the access key.
