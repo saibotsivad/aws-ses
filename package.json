@@ -8,13 +8,20 @@
     "type": "git",
     "url": "git+https://github.com/saibotsivad/aws-ses.git"
   },
+  "scripts": {
+    "lint": "eslint *.js"
+  },
   "keywords": [
     "aws",
     "ses",
     "email"
   ],
-  "author": "saibotsivad",
-  "license": "VOL",
+  "author": {
+    "name": "Tobias Davis",
+    "email": "tobias@davistobias.com",
+    "url": "https://davistobias.com"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
   "bugs": {
     "url": "https://github.com/saibotsivad/aws-ses/issues"
   },
@@ -24,6 +31,7 @@
     "sign-aws-requests": "^1.0.1"
   },
   "devDependencies": {
+    "@saibotsivad/eslint-config-saibotsivad": "*",
     "httpie": "^1.1.2"
   }
 }
