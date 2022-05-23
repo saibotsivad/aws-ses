@@ -42,7 +42,7 @@ const mutateAndAddObnoxiousMemberProperty = (params, parentWasNamedMember) => {
 	})
 }
 
-export const awsSes = ({ credentials: { region, secretAccessKey, accessKeyId }, addMemberProperty = true }) => {
+export const awsSes = ({ url, credentials: { region, secretAccessKey, accessKeyId }, addMemberProperty = true }) => {
 	const sign = createAwsSigner({
 		config: {
 			service: 'ses',
@@ -53,7 +53,7 @@ export const awsSes = ({ credentials: { region, secretAccessKey, accessKeyId }, 
 	})
 
 	const requestParams = {
-		url: `https://email.${region}.amazonaws.com`,
+		url: url || `https://email.${region}.amazonaws.com`,
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/x-www-form-urlencoded',

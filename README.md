@@ -101,6 +101,8 @@ The `credentials` object takes the following properties:
 - `accessKeyId` *(required)* The identifier of the access key.
 - `secretAccessKey` *(required)* The key secret.
 
+If the `url` string is set, it will be used instead of the AWS region-based URL.
+
 ### `generateRequest: async function ( action: String, params: Object ) => Object<{ url, headers, body }>`
 
 Generate the request parameters using the v4 signature algorithm.
